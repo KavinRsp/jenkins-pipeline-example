@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("my-app/pom.xml") {
+                dir("my-app") {
                 sh 'mvn -B -DskipTests clean package'
                 }
             
